@@ -1,0 +1,11 @@
+.header-bar {
+    border: 1px solid #000;
+    background-color: red;
+    display: flex;
+    justify-content:  center;
+}
+
+.pet--shop_title>a {
+    text-decoration: none;
+    color:#000;
+}

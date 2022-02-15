@@ -1,0 +1,11 @@
+.col {
+    float: left;
+}
+
+.cat, .car {
+    width: 25%;
+}
+
+.pro {
+    width: 50%;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Product from './Product';
+import Product from './Products';
 
 export default class ProductItem extends Component {
   constructor(props){

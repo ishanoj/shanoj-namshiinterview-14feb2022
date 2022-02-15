@@ -1,16 +1,21 @@
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
-import './App.css';
+import React, { useState } from 'react';
+import data from './services/products'
+import Header from './components/Header';
+import Routes from "./components/Routes/Routes";
+import {BrowserRouter as Router} from 'react-router-dom';
 
-function App() {
+const App = () => {
+  const { productItems } = data;
+  const [cartItems, setCartItems] = useState([]);
   return (
-    <div class="pet-shop-header">
-        <h2>Pet Shop</h2>
-        <hr/>
-        <ProductList />
-        <hr/>
-        <Cart />
-      </div>
+    <div className="container">
+      <Router>
+        <Header />
+        <Routes productItems={productItems} cartItems={cartItems} />
+      </Router>
+    </div>
+    
+    
   );
 }
 

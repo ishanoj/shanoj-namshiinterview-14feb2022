@@ -1,0 +1,28 @@
+.card {
+    min-height: 40vh;
+}
+
+.products .card img.product-image {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.image-wrapper, .title-price {
+    float: left;
+}
+
+.title-price {
+    margin-left: 1em;
+}
+
+.products-add {
+    background-color: #fff;
+    border-radius: 5px;
+    border:1px solid red;
+    cursor: pointer;
+    width: 100px;
+    min-height: 1em;
+}
